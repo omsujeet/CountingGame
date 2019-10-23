@@ -24,6 +24,11 @@ class HomeView: UIViewController , HomeViewProtocol{
     func goToScreenName(_ screenName: String) {
         print("In View Controller")
         lblName.isHidden = false
+        let view = self.storyboard?.instantiateViewController(withIdentifier: "NumberCountingView") as! NumberCountingView
+        let presenter = NumberPresenter.init(with: view)
+        let intractor = NumberIntractor.init(with: presenter)
+        view.intractor = intractor
+        self.navigationController?.pushViewController(view, animated: true)
     }
     
 

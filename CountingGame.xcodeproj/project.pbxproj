@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D07ABF79236061F500C4F7FC /* NumberCountingIntractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07ABF78236061F500C4F7FC /* NumberCountingIntractor.swift */; };
+		D07ABF7B2360620900C4F7FC /* NumberCountingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07ABF7A2360620900C4F7FC /* NumberCountingPresenter.swift */; };
 		D0B1695D235DFFFF00AD5D0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B1695C235DFFFF00AD5D0A /* AppDelegate.swift */; };
 		D0B16962235DFFFF00AD5D0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0B16960235DFFFF00AD5D0A /* Main.storyboard */; };
 		D0B16964235E000100AD5D0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B16963235E000100AD5D0A /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D07ABF78236061F500C4F7FC /* NumberCountingIntractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCountingIntractor.swift; sourceTree = "<group>"; };
+		D07ABF7A2360620900C4F7FC /* NumberCountingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCountingPresenter.swift; sourceTree = "<group>"; };
 		D0B16959235DFFFF00AD5D0A /* CountingGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountingGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B1695C235DFFFF00AD5D0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0B16961235DFFFF00AD5D0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -149,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				D0C021DA235F033800521776 /* HomeViewPresenter.swift */,
+				D07ABF7A2360620900C4F7FC /* NumberCountingPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				D0C021DC235F037400521776 /* HomeViewIntractor.swift */,
+				D07ABF78236061F500C4F7FC /* NumberCountingIntractor.swift */,
 			);
 			path = Intractor;
 			sourceTree = "<group>";
@@ -300,9 +306,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D07ABF7B2360620900C4F7FC /* NumberCountingPresenter.swift in Sources */,
 				D0C021DD235F037400521776 /* HomeViewIntractor.swift in Sources */,
 				D0B1695D235DFFFF00AD5D0A /* AppDelegate.swift in Sources */,
 				D0C021E6235F524C00521776 /* NumberCountingView.swift in Sources */,
+				D07ABF79236061F500C4F7FC /* NumberCountingIntractor.swift in Sources */,
 				D0C021DB235F033800521776 /* HomeViewPresenter.swift in Sources */,
 				D0C021E4235F45DB00521776 /* HomeView.swift in Sources */,
 				D0C021E82360346800521776 /* UIView+Animations.swift in Sources */,
