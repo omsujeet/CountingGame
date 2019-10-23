@@ -16,7 +16,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+//        self.window = UIWindow(frame: UIScreen.main.bounds)
+////        let homeView = homeViewBuilder()
+//        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+//        let view = storyBoard.instantiateViewController(withIdentifier: "HomeView") as! HomeView
+//        let nvController  = UINavigationController(rootViewController: view)
+//        window?.rootViewController = view
+//        window?.makeKeyAndVisible()
+        
+        // this line is important
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+
+//        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let viewController = homeViewBuilder()
+        //storyboard.instantiateViewController(withIdentifier: "HomeView") as! HomeView
+        let navigationController = UINavigationController.init(rootViewController: viewController)
+        self.window?.rootViewController = navigationController
+
+        self.window?.makeKeyAndVisible()
         return true
+        
+        
+//        return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -39,6 +61,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    func homeViewBuilder() -> HomeView {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let view : HomeViewProtocol = storyBoard.instantiateViewController(withIdentifier: "HomeView") as! HomeView
+        let presentor : HomePresenterProtocal = HomeViewPresenter(with: view)
+        let intractor : HomeIntractorProtocol = HomeViewIntractor(with: presentor)
+
+        (view as! HomeView).intractor = intractor
+        return view as! HomeView
     }
 
 

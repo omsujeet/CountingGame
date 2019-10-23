@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		D0B1695D235DFFFF00AD5D0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B1695C235DFFFF00AD5D0A /* AppDelegate.swift */; };
-		D0B1695F235DFFFF00AD5D0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B1695E235DFFFF00AD5D0A /* ViewController.swift */; };
 		D0B16962235DFFFF00AD5D0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0B16960235DFFFF00AD5D0A /* Main.storyboard */; };
 		D0B16964235E000100AD5D0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B16963235E000100AD5D0A /* Assets.xcassets */; };
 		D0B16967235E000100AD5D0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0B16965235E000100AD5D0A /* LaunchScreen.storyboard */; };
 		D0B16972235E000100AD5D0A /* CountingGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B16971235E000100AD5D0A /* CountingGameTests.swift */; };
 		D0B1697D235E000100AD5D0A /* CountingGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B1697C235E000100AD5D0A /* CountingGameUITests.swift */; };
+		D0C021DB235F033800521776 /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C021DA235F033800521776 /* HomeViewPresenter.swift */; };
+		D0C021DD235F037400521776 /* HomeViewIntractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C021DC235F037400521776 /* HomeViewIntractor.swift */; };
+		D0C021E4235F45DB00521776 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C021E3235F45DB00521776 /* HomeView.swift */; };
+		D0C021E6235F524C00521776 /* NumberCountingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C021E5235F524C00521776 /* NumberCountingView.swift */; };
+		D0C021E82360346800521776 /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C021E72360346800521776 /* UIView+Animations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		D0B16959235DFFFF00AD5D0A /* CountingGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountingGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B1695C235DFFFF00AD5D0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D0B1695E235DFFFF00AD5D0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D0B16961235DFFFF00AD5D0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0B16963235E000100AD5D0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0B16966235E000100AD5D0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,11 @@
 		D0B16978235E000100AD5D0A /* CountingGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountingGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B1697C235E000100AD5D0A /* CountingGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingGameUITests.swift; sourceTree = "<group>"; };
 		D0B1697E235E000100AD5D0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0C021DA235F033800521776 /* HomeViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
+		D0C021DC235F037400521776 /* HomeViewIntractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewIntractor.swift; sourceTree = "<group>"; };
+		D0C021E3235F45DB00521776 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D0C021E5235F524C00521776 /* NumberCountingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCountingView.swift; sourceTree = "<group>"; };
+		D0C021E72360346800521776 /* UIView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animations.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				D0B1695C235DFFFF00AD5D0A /* AppDelegate.swift */,
-				D0B1695E235DFFFF00AD5D0A /* ViewController.swift */,
+				D0C021E92360347400521776 /* Extensions */,
+				D0C021DE235F039700521776 /* View */,
+				D0C021DF235F03A000521776 /* Presenter */,
+				D0C021E0235F03AF00521776 /* Intractor */,
 				D0B16960235DFFFF00AD5D0A /* Main.storyboard */,
 				D0B16963235E000100AD5D0A /* Assets.xcassets */,
 				D0B16965235E000100AD5D0A /* LaunchScreen.storyboard */,
@@ -123,6 +134,39 @@
 				D0B1697E235E000100AD5D0A /* Info.plist */,
 			);
 			path = CountingGameUITests;
+			sourceTree = "<group>";
+		};
+		D0C021DE235F039700521776 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0C021E3235F45DB00521776 /* HomeView.swift */,
+				D0C021E5235F524C00521776 /* NumberCountingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D0C021DF235F03A000521776 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D0C021DA235F033800521776 /* HomeViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D0C021E0235F03AF00521776 /* Intractor */ = {
+			isa = PBXGroup;
+			children = (
+				D0C021DC235F037400521776 /* HomeViewIntractor.swift */,
+			);
+			path = Intractor;
+			sourceTree = "<group>";
+		};
+		D0C021E92360347400521776 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D0C021E72360346800521776 /* UIView+Animations.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +300,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0B1695F235DFFFF00AD5D0A /* ViewController.swift in Sources */,
+				D0C021DD235F037400521776 /* HomeViewIntractor.swift in Sources */,
 				D0B1695D235DFFFF00AD5D0A /* AppDelegate.swift in Sources */,
+				D0C021E6235F524C00521776 /* NumberCountingView.swift in Sources */,
+				D0C021DB235F033800521776 /* HomeViewPresenter.swift in Sources */,
+				D0C021E4235F45DB00521776 /* HomeView.swift in Sources */,
+				D0C021E82360346800521776 /* UIView+Animations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
