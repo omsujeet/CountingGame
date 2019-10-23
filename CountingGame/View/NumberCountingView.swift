@@ -18,6 +18,10 @@ class NumberCountingView: UIViewController , NumberViewProtocol {
     @IBOutlet weak var lblDigit: UILabel!
     @IBOutlet weak var imgDigit: UIImageView!
     @IBOutlet weak var imgDescription: UIImageView!
+    @IBOutlet weak var btnPrev: UIButton!
+    @IBOutlet weak var btnNext: UIButton!
+    @IBOutlet weak var btnSound: UIButton!
+    
     var counter = 0
     
     override func viewDidLoad() {
@@ -28,14 +32,24 @@ class NumberCountingView: UIViewController , NumberViewProtocol {
     
     @IBAction func btnPrevClicked (_ sender : Any)
     {
-        counter = counter - 1
-        intractor?.prepareData(forNumber: counter)
+        if counter >= 2
+        {
+            counter = counter - 1
+            intractor?.prepareData(forNumber: counter)
+        }
+//        counter == 1 ? btnPrev.isUserInteractionEnabled = false : btnPrev.isUserInteractionEnabled = true
     }
     
     @IBAction func btnNextClicked (_ sender : Any)
     {
+        if counter <= 9{
         counter = counter + 1
         intractor?.prepareData(forNumber: counter)
+        }
+        else
+        {
+            
+        }
     }
     
     @IBAction func btnSoundClicked (_ sender : Any)

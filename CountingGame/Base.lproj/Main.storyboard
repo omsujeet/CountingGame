@@ -115,6 +115,9 @@
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="btnNext" destination="W2P-Ty-a6p" id="cta-zU-cpF"/>
+                        <outlet property="btnPrev" destination="u14-bd-Wqr" id="AaM-H3-5nJ"/>
+                        <outlet property="btnSound" destination="Ziz-oe-xZI" id="xNW-PR-coW"/>
                         <outlet property="imgDescription" destination="bsX-Rc-uOd" id="2vo-hI-02B"/>
                         <outlet property="imgDigit" destination="fSI-7f-lHo" id="47H-pL-K2a"/>
                         <outlet property="lblDigit" destination="huc-A8-tzo" id="YS5-lg-Qo9"/>
